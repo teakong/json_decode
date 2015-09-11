@@ -56,4 +56,8 @@ $arr = array (
 );  
 $json_str = json_encode_cn($arr);
 echo $json_str;//{"name":"小明","sex":"男","age":"22"}
+$arr = json_decode($json_str, true);
+var_dump($arr);//array(3) { ["name"]=> string(6) "小明" ["sex"]=> string(3) "男" ["age"]=> string(2) "22" }
 
+$arr = json_decode_cn3($json_str);
+var_dump($arr);//array(3) { ["name"]=> string(6) "小明" ["sex"]=> string(3) "男" ["age"]=> string(0) "" }
