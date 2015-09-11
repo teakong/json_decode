@@ -47,3 +47,13 @@ function arrayRecursive(&$array, $function, $apply_to_keys_also = false)
 	}
 	$recursive_counter--;
 }
+
+//使用示例：  
+$arr = array (  
+    'name' => '小明',  
+    'sex' => '男',  
+    'age' => 22,  
+);  
+$json_str = json_encode_cn($arr);
+echo $json_str;//{"name":"小明","sex":"男","age":"22"}
+
